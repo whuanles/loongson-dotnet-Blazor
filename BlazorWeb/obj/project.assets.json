@@ -1,0 +1,119 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "CZGL.SystemInfo/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CZGL.SystemInfo.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CZGL.SystemInfo.dll": {}
+        }
+      },
+      "CZGL.SystemInfo.Linux/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "CZGL.SystemInfo": "0.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/CZGL.SystemInfo.Linux.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CZGL.SystemInfo.Linux.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CZGL.SystemInfo/0.1.1": {
+      "sha512": "IwaZCIZSkgCUJQm5OxJILC9HRuFhJQlgg4TnH1NN7twzFzO78RmZy4WCNy0a9Gt+PK3h7erI0SPI8H8Dh8lP1g==",
+      "type": "package",
+      "path": "czgl.systeminfo/0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Apache-2.0.txt",
+        "czgl.systeminfo.0.1.1.nupkg.sha512",
+        "czgl.systeminfo.nuspec",
+        "lib/netstandard2.0/CZGL.SystemInfo.dll"
+      ]
+    },
+    "CZGL.SystemInfo.Linux/0.1.1": {
+      "sha512": "rr7o1OfQKXu4gp1MfYKW324mu11dw/O+IxPkvCMjD0NvdIYyjIq6N1mY2SaNrWSN8jroRsKjUduVXdEo07kf5Q==",
+      "type": "package",
+      "path": "czgl.systeminfo.linux/0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Apache-2.0.txt",
+        "czgl.systeminfo.linux.0.1.1.nupkg.sha512",
+        "czgl.systeminfo.linux.nuspec",
+        "lib/netstandard2.0/CZGL.SystemInfo.Linux.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "CZGL.SystemInfo >= 0.1.1",
+      "CZGL.SystemInfo.Linux >= 0.1.1"
+    ]
+  },
+  "packageFolders": {
+    "/home/whuanle/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/media/whuanle/Dowork/文章/龙芯支持/WebSystemInfo/BlazorWeb/BlazorWeb.csproj",
+      "projectName": "BlazorWeb",
+      "projectPath": "/media/whuanle/Dowork/文章/龙芯支持/WebSystemInfo/BlazorWeb/BlazorWeb.csproj",
+      "packagesPath": "/home/whuanle/.nuget/packages/",
+      "outputPath": "/media/whuanle/Dowork/文章/龙芯支持/WebSystemInfo/BlazorWeb/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/whuanle/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "dependencies": {
+          "CZGL.SystemInfo": {
+            "target": "Package",
+            "version": "[0.1.1, )"
+          },
+          "CZGL.SystemInfo.Linux": {
+            "target": "Package",
+            "version": "[0.1.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}

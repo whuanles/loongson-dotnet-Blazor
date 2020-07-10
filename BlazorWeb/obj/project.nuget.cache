@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "bHTcTqpQn1OyVmcS0VDQNw1YIR9irJNHOuAO22z5nBk1fLxAaRV+GlHg0DwcN7USxXoXIumIyTgjyFcJSba4NA==",
+  "success": true,
+  "projectFilePath": "H:\\文章\\龙芯支持\\WebSystemInfo\\BlazorWeb\\BlazorWeb.csproj",
+  "expectedPackageFiles": [
+    "X:\\Users\\whuanle\\.nuget\\packages\\czgl.systeminfo\\0.1.1\\czgl.systeminfo.0.1.1.nupkg.sha512",
+    "X:\\Users\\whuanle\\.nuget\\packages\\czgl.systeminfo.linux\\0.1.1\\czgl.systeminfo.linux.0.1.1.nupkg.sha512",
+    "X:\\Users\\whuanle\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
