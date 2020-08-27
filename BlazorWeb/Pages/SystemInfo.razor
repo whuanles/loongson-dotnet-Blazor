@@ -96,13 +96,14 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in g)
-        {
-            <tr>
-                <td>@item.Key</td>
-                <td>@item.Value</td>
-            </tr>
-        }
+        @if (g != null)
+            @foreach (var item in g)
+            {
+                <tr>
+                    <td>@item.Key</td>
+                    <td>@item.Value</td>
+                </tr>
+            }
     </tbody>
 </table>
 
@@ -124,22 +125,23 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in dic)
-        {
-            <tr>
-                <td>@item.Key</td>
-                <td>@item.Value.Command</td>
-                <td>@item.Value.User</td>
-                <td>@item.Value.PR</td>
-                <td>@item.Value.Nice</td>
-                <td>@item.Value.VIRT</td>
-                <td>@item.Value.RES</td>
-                <td>@item.Value.SHR</td>
-                <td>@item.Value.State</td>
-                <td>@item.Value.CPU</td>
-                <td>@item.Value.Mem</td>
-            </tr>
-        }
+        @if (dic != null)
+            @foreach (var item in dic)
+            {
+                <tr>
+                    <td>@item.Key</td>
+                    <td>@item.Value.Command</td>
+                    <td>@item.Value.User</td>
+                    <td>@item.Value.PR</td>
+                    <td>@item.Value.Nice</td>
+                    <td>@item.Value.VIRT</td>
+                    <td>@item.Value.RES</td>
+                    <td>@item.Value.SHR</td>
+                    <td>@item.Value.State</td>
+                    <td>@item.Value.CPU</td>
+                    <td>@item.Value.Mem</td>
+                </tr>
+            }
     </tbody>
 </table>
 
