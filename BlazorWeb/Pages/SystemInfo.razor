@@ -4,19 +4,19 @@
     <h3>@item.Item1</h3>
     <table class="table">
         <thead>
-        <tr>
-            <th>类型</th>
-            <th>信息</th>
-        </tr>
+            <tr>
+                <th>类型</th>
+                <th>信息</th>
+            </tr>
         </thead>
         <tbody>
-        @foreach (var node in item.Item2)
-        {
-            <tr>
-                <td>@node.Key</td>
-                <td>@node.Value</td>
-            </tr>
-        }
+            @foreach (var node in item.Item2)
+            {
+                <tr>
+                    <td>@node.Key</td>
+                    <td>@node.Value</td>
+                </tr>
+            }
         </tbody>
     </table>
     <p>注：有些信息还需要迭代一次，这里不详细展开</p>
@@ -27,19 +27,20 @@
 <h3>进程统计</h3>
 <table class="table">
     <thead>
-    <tr>
-        <th>类型</th>
-        <th>信息</th>
-    </tr>
+        <tr>
+            <th>类型</th>
+            <th>信息</th>
+        </tr>
     </thead>
     <tbody>
-    @foreach (var item in d)
-    {
-        <tr>
-            <td>@item.Key</td>
-            <td>@item.Value</td>
-        </tr>
-    }
+        @if (d != null)
+            @foreach (var item in d)
+            {
+                <tr>
+                    <td>@item.Key</td>
+                    <td>@item.Value</td>
+                </tr>
+            }
     </tbody>
 </table>
 
@@ -47,19 +48,20 @@
 <h3>CPU资源统计</h3>
 <table class="table">
     <thead>
-    <tr>
-        <th>类型</th>
-        <th>信息</th>
-    </tr>
+        <tr>
+            <th>类型</th>
+            <th>信息</th>
+        </tr>
     </thead>
     <tbody>
-    @foreach (var item in e)
-    {
-        <tr>
-            <td>@item.Key</td>
-            <td>@item.Value</td>
-        </tr>
-    }
+        @if (e != null)
+            @foreach (var item in e)
+            {
+                <tr>
+                    <td>@item.Key</td>
+                    <td>@item.Value</td>
+                </tr>
+            }
     </tbody>
 </table>
 
@@ -67,19 +69,20 @@
 <h3>内存统计</h3>
 <table class="table">
     <thead>
-    <tr>
-        <th>类型</th>
-        <th>信息</th>
-    </tr>
+        <tr>
+            <th>类型</th>
+            <th>信息</th>
+        </tr>
     </thead>
     <tbody>
-    @foreach (var item in f)
-    {
-        <tr>
-            <td>@item.Key</td>
-            <td>@item.Value</td>
-        </tr>
-    }
+        @if (f != null)
+            @foreach (var item in f)
+            {
+                <tr>
+                    <td>@item.Key</td>
+                    <td>@item.Value</td>
+                </tr>
+            }
     </tbody>
 </table>
 
@@ -87,56 +90,56 @@
 <h3>获取虚拟内存统计</h3>
 <table class="table">
     <thead>
-    <tr>
-        <th>类型</th>
-        <th>信息</th>
-    </tr>
+        <tr>
+            <th>类型</th>
+            <th>信息</th>
+        </tr>
     </thead>
     <tbody>
-    @foreach (var item in g)
-    {
-        <tr>
-            <td>@item.Key</td>
-            <td>@item.Value</td>
-        </tr>
-    }
+        @foreach (var item in g)
+        {
+            <tr>
+                <td>@item.Key</td>
+                <td>@item.Value</td>
+            </tr>
+        }
     </tbody>
 </table>
 
 <h3>各个进程使用的资源</h3>
 <table class="table">
     <thead>
-    <tr>
-        <th>进程Id</th>
-        <th>进程名称</th>
-        <th>所属用户</th>
-        <th>优化级</th>
-        <th>高低优先级</th>
-        <th>虚拟内存</th>
-        <th>物理内存</th>
-        <th>共享内存</th>
-        <th>进程状态</th>
-        <th>占用系统CPU(%)</th>
-        <th>占用内存(%d)</th>
-    </tr>
+        <tr>
+            <th>进程Id</th>
+            <th>进程名称</th>
+            <th>所属用户</th>
+            <th>优化级</th>
+            <th>高低优先级</th>
+            <th>虚拟内存</th>
+            <th>物理内存</th>
+            <th>共享内存</th>
+            <th>进程状态</th>
+            <th>占用系统CPU(%)</th>
+            <th>占用内存(%d)</th>
+        </tr>
     </thead>
     <tbody>
-    @foreach (var item in dic)
-    {
-        <tr>
-            <td>@item.Key</td>
-            <td>@item.Value.Command</td>
-            <td>@item.Value.User</td>
-            <td>@item.Value.PR</td>
-            <td>@item.Value.Nice</td>
-            <td>@item.Value.VIRT</td>
-            <td>@item.Value.RES</td>
-            <td>@item.Value.SHR</td>
-            <td>@item.Value.State</td>
-            <td>@item.Value.CPU</td>
-            <td>@item.Value.Mem</td>
-        </tr>
-    }
+        @foreach (var item in dic)
+        {
+            <tr>
+                <td>@item.Key</td>
+                <td>@item.Value.Command</td>
+                <td>@item.Value.User</td>
+                <td>@item.Value.PR</td>
+                <td>@item.Value.Nice</td>
+                <td>@item.Value.VIRT</td>
+                <td>@item.Value.RES</td>
+                <td>@item.Value.SHR</td>
+                <td>@item.Value.State</td>
+                <td>@item.Value.CPU</td>
+                <td>@item.Value.Mem</td>
+            </tr>
+        }
     </tbody>
 </table>
 
@@ -164,30 +167,30 @@
 
     private void ReBaseInfo()
     {
-    // 获取系统平台信息
+        // 获取系统平台信息
         (string, KeyValuePair<string, object>[]) a = EnvironmentInfo.GetSystemPlatformInfo();
-    // 获取系统运行属性信息
+        // 获取系统运行属性信息
         (string, KeyValuePair<string, object>[]) b = EnvironmentInfo.GetSystemRunInfo();
-    // 获取机器资源信息
+        // 获取机器资源信息
         (string, KeyValuePair<string, object>[]) c = EnvironmentInfo.GetMachineInfo();
         BaseInfo.Clear();
         BaseInfo.Add(a);
         BaseInfo.Add(b);
         BaseInfo.Add(c);
 
-    // 获取进程统计
+        // 获取进程统计
         d = info.GetRefTasks();
 
-    // 获取CPU资源统计
+        // 获取CPU资源统计
         e = info.GetRefCpuState();
 
-    // 获取内存统计
+        // 获取内存统计
         f = info.GetRefMem();
 
-    // 获取虚拟内存统计
+        // 获取虚拟内存统计
         g = info.GetRefSwap();
 
-    //　所有子进程的信息
+        //　所有子进程的信息
         dic = info.GetPidInfo();
     }
 
