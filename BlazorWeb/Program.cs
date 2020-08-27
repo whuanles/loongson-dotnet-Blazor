@@ -22,7 +22,12 @@ namespace BlazorWeb
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder
+                    .UseKestrel(options=>
+                    {
+                        options.ListenAnyIP(80);
+                    }).UseStartup<Startup>();
+
                 });
     }
 }

@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/media/whuanle/Dowork/文章/龙芯支持/WebSystemInfo/BlazorWeb/BlazorWeb.csproj": {}
+    "E:\\学习\\loongson-dotnet-Blazor\\BlazorWeb\\BlazorWeb.csproj": {}
   },
   "projects": {
-    "/media/whuanle/Dowork/文章/龙芯支持/WebSystemInfo/BlazorWeb/BlazorWeb.csproj": {
+    "E:\\学习\\loongson-dotnet-Blazor\\BlazorWeb\\BlazorWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/whuanle/Dowork/文章/龙芯支持/WebSystemInfo/BlazorWeb/BlazorWeb.csproj",
+        "projectUniqueName": "E:\\学习\\loongson-dotnet-Blazor\\BlazorWeb\\BlazorWeb.csproj",
         "projectName": "BlazorWeb",
-        "projectPath": "/media/whuanle/Dowork/文章/龙芯支持/WebSystemInfo/BlazorWeb/BlazorWeb.csproj",
-        "packagesPath": "/home/whuanle/.nuget/packages/",
-        "outputPath": "/media/whuanle/Dowork/文章/龙芯支持/WebSystemInfo/BlazorWeb/obj/",
+        "projectPath": "E:\\学习\\loongson-dotnet-Blazor\\BlazorWeb\\BlazorWeb.csproj",
+        "packagesPath": "X:\\Users\\whuanle\\.nuget\\packages\\",
+        "outputPath": "E:\\学习\\loongson-dotnet-Blazor\\BlazorWeb\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\",
+          "X:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/whuanle/.config/NuGet/NuGet.Config"
+          "X:\\Users\\whuanle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "X:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "X:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
+          "X:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,7 +61,22 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.3, 3.0.3]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "X:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
